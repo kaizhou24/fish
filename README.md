@@ -2,7 +2,6 @@
 
 A six-player card game utilizing all 52 cards as well as the 2 Jokers, for a total of 54 cards in circulation.
 
----
 ## BASIC PREGAME INFORMATION
 
 Fish is a game of implicit communication, where players must track (or attempt to track) all 54 cards in play. A skilled player knows both what their own team has and what the opponent has, and makes decisions based on who has each card.
@@ -13,7 +12,6 @@ The 9 sets are as follows: 2-7 of clubs, 2-7 of diamonds, 2-7 of spades, 2-7 of 
 
 The first team to 5 completed sets wins. 
 
----
 ## FORMING SETS
 
 The primary mode of gathering information is to ask a member of the opposing team a question regarding a specific card. A coin-flip scenario may determine which team gets to ask the first question. 
