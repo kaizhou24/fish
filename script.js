@@ -12,4 +12,17 @@ function createDeck(){
     return deck;
 }
 
-console.log(createDeck());
+function shuffleDeck(deck){
+    for(let i = 0; i < deck.length; i++){
+        let random_i = Math.floor(Math.random() * i);
+        let temp = deck[i];
+        deck[i] = deck[random_i];
+        deck[random_i] = temp;
+    }
+
+    return deck;
+}
+
+let deck = createDeck();
+shuffleDeck(deck);
+console.log(deck);
