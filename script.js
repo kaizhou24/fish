@@ -47,8 +47,34 @@ class Player{
     }
 }
 
-let deck = new Deck();
-deck.shuffle();
-const player1 = new Player("alice");
-player1.draw(deck);
-console.log(player1);
+class Game{
+    constructor(){
+        this.deck = new Deck();
+        this.deck.shuffle();
+        this.players = [
+            new Player("alice"),
+            new Player("bob"),
+            new Player("carol"),
+            new Player("dave"),
+            new Player("eduardo"),
+            new Player("felicia")
+        ]
+        
+    }
+
+    deal_all_cards(){
+        while(this.deck.cards.length > 0){
+            for(const player of this.players){
+                if(this.deck.cards.length === 0){
+                    break;
+                }
+                player.draw(this.deck);
+            }
+        }
+
+        console.log(this.players[0]);
+        console.log(this.players[1]);
+    }
+}
+
+let game = new Game();
