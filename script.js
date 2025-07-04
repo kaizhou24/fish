@@ -14,12 +14,11 @@ class Deck{
     }
 
     shuffle(){
-        for(let i = 0; i < this.cards.length; i++) {
-            let random_i = Math.floor(Math.random() * i);
-            let temp = this.cards[i];
-            this.cards[i] = this.cards[random_i];
-            this.cards[random_i] = temp;
+        for (let i = this.cards.length - 1; i > 0; i--) { 
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
         }
+
         console.log("deck shuffled");
     }
 
